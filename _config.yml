@@ -1,9 +1,11 @@
 title: "V2Ray / Singbox 机场测评"
-description: "持续发布 V2Ray 与 Singbox 机场月报、周报和节点速度实测，面向搜索引擎和 GitHub Pages 优化的静态内容站。"
+description: "持续发布 2026机场推荐、VPN 测评、机场跑路监测、科学上网、梯子和魔法上网相关的 V2Ray 与 Singbox 月报、周报和节点速度实测。"
+keywords: "2026机场推荐,VPN 测评,机场跑路监测,科学上网,梯子,魔法,机场测评,V2Ray 机场,Singbox 机场,机场推荐,节点测速"
 lang: zh-CN
 timezone: Asia/Shanghai
 url: "https://newkaiwen92-sudo.github.io"
 baseurl: "/2026_v2ray_singbox_Test"
+author: "newkaiwen92-sudo"
 permalink: pretty
 markdown: kramdown
 kramdown:

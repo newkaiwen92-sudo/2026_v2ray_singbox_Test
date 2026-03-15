@@ -10,18 +10,24 @@ categories:
   - monthly
 tags:
   - 机场测评
+  - 2026机场推荐
+  - VPN 测评
+  - 机场跑路监测
+  - 科学上网
+  - 梯子
+  - 魔法
   - V2Ray
   - Singbox
   - 月报
   - 节点测速
   - 机场推荐
-keywords: "机场测评,V2Ray 机场,Singbox 机场,机场推荐,节点测速,翻墙机场月报"
+keywords: "2026机场推荐,VPN 测评,机场跑路监测,科学上网,梯子,魔法,机场测评,V2Ray 机场,Singbox 机场,机场推荐,节点测速,翻墙机场月报"
 report_month: "2026-03"
 ranking_config_version: "6"
 ranking_config_updated_at: "2026-03-15T15:49:29.010575+00:00"
 ---
 
-基于 VPS 实测和后台人工补充生成的月度管理报告。
+这是一篇面向 2026机场推荐、VPN 测评、机场跑路监测、科学上网、梯子和魔法上网搜索需求整理的月度测评报告，基于 VPS 实测和后台人工补充生成。
 
 - 生成时间：2026-03-15 17:56 UTC
 - 申请机场测试：[申请机场测试](https://puffy-sled-767.notion.site/323893a043ae8068997dc90507903576)
