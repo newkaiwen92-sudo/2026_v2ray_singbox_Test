@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-hero">
+    <p class="post-kicker">
+      {% if page.categories contains 'monthly' %}月报{% elsif page.categories contains 'weekly' %}周报{% else %}测评{% endif %}
+    </p>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+    <div class="post-meta">
+      <span>发布时间：{{ page.date | date: "%Y-%m-%d" }}</span>
+      {% if page.report_month %}
+        <span>报告月份：{{ page.report_month }}</span>
+      {% endif %}
+      {% if page.tags and page.tags.size > 0 %}
+        <span>标签：{{ page.tags | join: " / " }}</span>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <section class="post-cta">
+    <h2>继续阅读</h2>
+    <ul class="post-list compact">
+      {% for post in site.posts limit:4 %}
+        {% if post.url != page.url %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+</article>

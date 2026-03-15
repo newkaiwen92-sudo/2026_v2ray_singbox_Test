@@ -1,0 +1,33 @@
+title: "V2Ray / Singbox 机场测评"
+description: "持续发布 V2Ray 与 Singbox 机场月报、周报和节点速度实测，面向搜索引擎和 GitHub Pages 优化的静态内容站。"
+lang: zh-CN
+timezone: Asia/Shanghai
+url: "https://newkaiwen92-sudo.github.io"
+baseurl: "/2026_v2ray_singbox_Test"
+permalink: pretty
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: "newkaiwen92-sudo"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+feed:
+  posts_limit: 20
+exclude:
+  - README.md
+  - LICENSE

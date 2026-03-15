@@ -1,12 +1,25 @@
 ---
+layout: post
 title: "2026年3月机场测评月报：V2Ray / Singbox 节点速度与稳定性测试"
 description: "2026年3月最新机场测速报告。通过多地区VPS实测，对主流V2Ray与Singbox机场进行速度、稳定性和价格对比，提供真实机场推荐参考。"
+date: 2026-03-15 17:56:00 +0000
+author: "newkaiwen92-sudo"
+permalink: /monthly/2026/03/v2ray-singbox-airport-review/
+categories:
+  - reports
+  - monthly
+tags:
+  - 机场测评
+  - V2Ray
+  - Singbox
+  - 月报
+  - 节点测速
+  - 机场推荐
+keywords: "机场测评,V2Ray 机场,Singbox 机场,机场推荐,节点测速,翻墙机场月报"
 report_month: "2026-03"
 ranking_config_version: "6"
 ranking_config_updated_at: "2026-03-15T15:49:29.010575+00:00"
 ---
-
-# 2026年3月机场测评月报：V2Ray / Singbox 节点速度与稳定性测试
 
 基于 VPS 实测和后台人工补充生成的月度管理报告。
 
