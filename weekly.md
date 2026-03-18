@@ -7,7 +7,7 @@ permalink: /weekly/
 ## 周报列表
 
 <section class="panel">
-  {% assign weekly_posts = site.posts | where_exp: "post", "post.categories contains 'weekly'" %}
+  {% assign weekly_posts = site.categories.weekly %}
   {% if weekly_posts.size > 0 %}
     <ul class="post-list">
       {% for post in weekly_posts %}
