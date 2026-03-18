@@ -4,7 +4,7 @@ layout: default
 <article class="post">
   <header class="post-hero">
     <p class="post-kicker">
-      {% if page.categories contains 'monthly' %}月报{% elsif page.categories contains 'weekly' %}周报{% else %}测评{% endif %}
+      {% if page.categories contains 'monthly' %}月报{% elsif page.categories contains 'weekly' %}周报{% elsif page.categories contains 'monitor' %}监测{% else %}测评{% endif %}
     </p>
     <h1>{{ page.title }}</h1>
     {% if page.description %}
