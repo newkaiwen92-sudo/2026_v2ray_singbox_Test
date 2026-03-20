@@ -25,5 +25,41 @@
         <p>{{ site.title }} · 基于 GitHub Pages 发布的静态测评站点。</p>
       </div>
     </footer>
+    <script>
+      (() => {
+        const normalizeText = (value) => value.replace(/\s+/g, "");
+        const tables = document.querySelectorAll(".post-content table");
+
+        tables.forEach((table) => {
+          const headRow = table.querySelector("thead tr");
+          const bodyRows = table.querySelectorAll("tbody tr");
+          if (!headRow || !bodyRows.length) {
+            return;
+          }
+
+          const headers = Array.from(headRow.querySelectorAll("th"));
+          const statusIndex = headers.findIndex((th) =>
+            normalizeText(th.textContent || "").includes("当前状态")
+          );
+          if (statusIndex === -1) {
+            return;
+          }
+
+          bodyRows.forEach((row) => {
+            const cells = row.querySelectorAll("td");
+            if (cells.length <= statusIndex) {
+              return;
+            }
+
+            const statusCell = cells[statusIndex];
+            const statusText = normalizeText(statusCell.textContent || "");
+            if (statusText.includes("跑路")) {
+              row.classList.add("status-danger");
+              statusCell.classList.add("status-danger-cell");
+            }
+          });
+        });
+      })();
+    </script>
   </body>
 </html>

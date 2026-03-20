@@ -8,6 +8,8 @@
   --accent: #0d6a5c;
   --accent-strong: #094f45;
   --accent-soft: #dff2eb;
+  --danger: #b42318;
+  --danger-soft: #fff0f0;
   --warn-soft: #fff3d6;
   --radius-lg: 22px;
   --radius-md: 14px;
@@ -354,6 +356,19 @@ main.wrap {
 
 .post-content tbody tr:last-child td {
   border-bottom: 0;
+}
+
+.post-content tbody tr.status-danger {
+  background: var(--danger-soft);
+}
+
+.post-content tbody tr.status-danger:hover {
+  background: #ffe7e7;
+}
+
+.post-content td.status-danger-cell {
+  color: var(--danger);
+  font-weight: 800;
 }
 
 .post-content td:nth-child(1),
