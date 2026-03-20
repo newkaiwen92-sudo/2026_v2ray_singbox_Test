@@ -27,15 +27,18 @@ keywords: "2026机场推荐,VPN 测评,机场跑路监测,科学上网,梯子,�
 ## 最新测评
 
 <section class="panel">
-  <ul class="post-list">
-    {% for post in site.posts limit: 6 %}
-      <li>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <p>{{ post.description }}</p>
-        <p class="muted">{{ post.date | date: "%Y-%m-%d" }} · {{ post.categories | join: " / " }}</p>
-      </li>
-    {% endfor %}
-  </ul>
+  {% assign latest_post = site.posts.first %}
+  {% if latest_post %}
+    <article class="latest-post">
+      <h3><a href="{{ latest_post.url | relative_url }}">{{ latest_post.title }}</a></h3>
+      <p class="muted">{{ latest_post.date | date: "%Y-%m-%d" }} · {{ latest_post.categories | join: " / " }}</p>
+      <div class="post-content latest-post__content">
+        {{ latest_post.content }}
+      </div>
+    </article>
+  {% else %}
+    <p>暂时还没有文章。</p>
+  {% endif %}
 </section>
 
 ## 内容布局建议
