@@ -10,6 +10,8 @@
   --accent-soft: #dff2eb;
   --danger: #b42318;
   --danger-soft: #fff0f0;
+  --warning: #b54708;
+  --warning-soft: #fff7ed;
   --warn-soft: #fff3d6;
   --radius-lg: 22px;
   --radius-md: 14px;
@@ -368,6 +370,19 @@ main.wrap {
 
 .post-content td.status-danger-cell {
   color: var(--danger);
+  font-weight: 800;
+}
+
+.post-content tbody tr.status-warning {
+  background: var(--warning-soft);
+}
+
+.post-content tbody tr.status-warning:hover {
+  background: #ffefd9;
+}
+
+.post-content td.status-warning-cell {
+  color: var(--warning);
   font-weight: 800;
 }
 

@@ -56,6 +56,12 @@
             if (statusText.includes("跑路")) {
               row.classList.add("status-danger");
               statusCell.classList.add("status-danger-cell");
+              return;
+            }
+
+            if (statusText.includes("风险")) {
+              row.classList.add("status-warning");
+              statusCell.classList.add("status-warning-cell");
             }
           });
         });
